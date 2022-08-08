@@ -59,6 +59,8 @@ describe('Add costomer page VTC',function()
     //    it(' check the functionality Add costmer page with valid data',function(){
     //      cy.get('[ng-class="btnClass1"]').click()
     //      cy.get(':nth-child(1) > .form-control').type('Suraj')
+
+    
     //      cy.get(':nth-child(2) > .form-control').type('Chavan')
     //      cy.get(':nth-child(3) > .form-control').type('4003')
     //      cy.get('form.ng-dirty > .btn').click()
