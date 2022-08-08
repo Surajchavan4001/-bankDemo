@@ -34,4 +34,34 @@ describe('login page1 for manager VTC',function()
         cy.get('thead > tr > :nth-child(5)').should('contain','Delete Customer')
        
          })
-     })   
+     })
+describe('Add costomer page VTC',function()
+     {
+      it('verify details on add costmer page',function(){
+        cy.get('[ng-class="btnClass1"]').click()
+        cy.get(':nth-child(1) > label').should('be.visible').should('contain','First Name')
+        cy.get(':nth-child(2) > label').should('be.visible').should('contain','Last Name')
+        cy.get(':nth-child(3) > label').should('be.visible').should('contain','Post Code')
+        cy.get('form.ng-pristine > .btn').should('be.visible').should('contain','Add Customer').should('be.enabled')
+        cy.get(':nth-child(1) > .form-control').should('be.visible').should('be.enabled')
+        cy.get(':nth-child(2) > .form-control').should('be.visible').should('be.enabled')
+        cy.get(':nth-child(3) > .form-control').should('be.visible').should('be.enabled')
+          })
+      }) 
+ describe('Add costomer page FTC',function()
+      {
+        it(' check the functionality Add costmer page with blank data',function(){
+            cy.get('[ng-class="btnClass1"]').click()
+            
+    //         cy.get('form.ng-dirty > .btn').click()
+   
+              })
+    //    it(' check the functionality Add costmer page with valid data',function(){
+    //      cy.get('[ng-class="btnClass1"]').click()
+    //      cy.get(':nth-child(1) > .form-control').type('Suraj')
+    //      cy.get(':nth-child(2) > .form-control').type('Chavan')
+    //      cy.get(':nth-child(3) > .form-control').type('4003')
+    //      cy.get('form.ng-dirty > .btn').click()
+
+    //        })
+       })            
