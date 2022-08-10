@@ -138,7 +138,7 @@ describe('login page1 FTC',function()
           cy.get('form.ng-dirty > .btn').click()
           cy.get('.error').should('be.visible').should('contain','Transaction successful')
           cy.get('.form-control').should('be.visible').should('be.enabled')
-         cy.wait(1000)
+         cy.wait(2000)
         })
           })   
             
